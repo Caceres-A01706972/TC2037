@@ -10,7 +10,7 @@
 
 (require 2htdp/batch-io) 
 
-(define archivo "test.txt")
+(define archivo "Situación Problema\\Resaltador de Sintaxis 1\\test.txt")
 
 ;; The function opens an input file, reads it character by character,
 ;; returning it in a list of characters.
