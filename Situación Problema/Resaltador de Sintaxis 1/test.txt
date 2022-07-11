@@ -1,0 +1,40 @@
+//bibliotecas
+#include <iostream>
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <vector>
+#include <utility>
+using namespace std;
+
+//comentario
+float potencia( int x, float n ) {
+	int i = 0;
+	float pot = 1.0;
+	
+	if ( n > 0 ) {
+		while ( i < n ) {
+			pot =  pot * x;
+			i = i + 1;
+		}
+	} else {
+		while ( 0 > n ) {
+			pot = pot * 1.0 / x;
+			n = n + 1;
+		}
+	}
+	
+	return pot;
+}
+
+//COMENTARIO
+int main() {
+	
+	int x;
+	float n;
+	
+	cin >> x >> n;
+	//COMENTARIO
+	printf( "%.4f", potencia( x, n ) );	
+}
