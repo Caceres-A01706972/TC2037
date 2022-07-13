@@ -1,9 +1,17 @@
 # EJERCICIOS DE PROGRAMACIÓN CONCURRENTE
 
-### Para ejecutar en Windows:
+### Para ejecutar C++ en Windows:
 
 ```
 cd FILE_PATH
-g++ .\concurrente1.cpp -lpthread -o app
+g++ .\NOMBRE_ARCHIVO.cpp -lpthread -o app
+.\app.exe
+```
+
+### Para ejecutar C en Windows:
+
+```
+cd FILE_PATH
+gcc .\NOMBRE_ARCHIVO.c -lpthread -o app
 .\app.exe
 ```
