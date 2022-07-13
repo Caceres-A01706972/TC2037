@@ -1,3 +1,6 @@
+//EJEMPLO DE CLASE
+// ELEVAR NUMEROS DE UN ARREGLO A UNA POTENCIA
+
 #include <iostream>
 #include <iomanip>
 #include <cstring>
