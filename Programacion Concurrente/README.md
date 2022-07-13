@@ -1,9 +1,19 @@
-# EJERCICIOS DE PROGRAMACION CONCURRENTE
+# EJERCICIOS DE PROGRAMACIÓN CONCURRENTE
 
-Para ejecutar en Windows:
+- *Se debe de tener instalado pthreads en Windows* 'https://youtu.be/U7cGjV37rbk'
 
-'''
+### Para ejecutar C++ en Windows:
+
+```
 cd FILE_PATH
-g++ .\concurrente1.cpp -lpthread -o app
+g++ .\NOMBRE_ARCHIVO.cpp -lpthread -o app
 .\app.exe
-'''
+```
+
+### Para ejecutar C en Windows:
+
+```
+cd FILE_PATH
+gcc .\NOMBRE_ARCHIVO.c -lpthread -o app
+.\app.exe
+```
