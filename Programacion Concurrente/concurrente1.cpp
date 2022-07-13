@@ -1,6 +1,6 @@
 // =================================================================
 //
-// File: exercise1.cpp
+// File: concurrente1.cpp
 // Author: Ricardo Andres Caceres Villibord A01706972                                            -
 // Description: This file contains the code to brute-force all prime 
 //  numbers less than MAXIMUM.
