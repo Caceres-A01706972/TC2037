@@ -1,7 +1,6 @@
 # EJERCICIOS DE PROGRAMACIÓN CONCURRENTE
 
-###### Se debe de tener instalado pthreads en Windows:
-https://youtu.be/U7cGjV37rbk
+*Se debe de tener instalado pthreads en Windows* 'https://youtu.be/U7cGjV37rbk'
 
 ### Para ejecutar C++ en Windows:
 
