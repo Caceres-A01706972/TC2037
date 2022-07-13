@@ -1,3 +1,15 @@
+// =================================================================
+//
+// File: exercise1.cpp
+// Author: Ricardo Andres Caceres Villibord A01706972                                            -
+// Description: This file contains the code to brute-force all prime 
+//  numbers less than MAXIMUM.
+//
+// Copyright (c) 2020 by Tecnologico de Monterrey.
+// All Rights Reserved. May be reproduced for any non-commercial
+// purpose.
+//
+// =================================================================
 #include <iostream>
 #include <iomanip>
 #include <cmath>
