@@ -105,7 +105,7 @@ int main(int argc, char* argv[]) {
     }
     cout << "result = " << fixed << setprecision(0) << result << endl;
     cout << "concurrent average time = " << setprecision(5) << (concurrent / N) << " ms" << endl;
-    // =================================================================
+    // ==================================================================
 
     cout << "speed up = " << setprecision(5) << (sequential / concurrent) << " ms" << endl;
     
