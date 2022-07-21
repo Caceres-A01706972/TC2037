@@ -32,7 +32,7 @@ int main(int argc, char** argv)
          << " arguments:" << "\n";
   
     for (int i = 0; i < argc; ++i)
-        cout << argv[i] << "\n";
+        cout << "FILE #" << i << ": " << argv[i] << "\n";
   
     return 0;
 }
