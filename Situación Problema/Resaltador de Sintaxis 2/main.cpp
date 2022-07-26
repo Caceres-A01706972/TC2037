@@ -22,23 +22,12 @@
 #include <regex>
 #include <fstream>
 #include "utils.h"
+#include "funciones_regex.h"
 
 const int HILOS = 8; //Threads to be used
 
 using namespace std;
 
-
-
-bool isdelimitador (char letra) {
-    char delimitadores[] = { '(', ')', '[', ']', '{', '}', '<', '>', ',', ';', '+', '-', '*', '%', '/', '\n', ' ', '\t' };
-    for(int i = 0; i < 18; i++){
-        if(letra == delimitadores[i]){
-            return true;
-        } 
-    }
-    return false;
-    
-}
 
 vector<string> llenarVectorPalabras(string codigo, vector<string> vectorPalabras){
     string palabra = "";
@@ -103,7 +92,7 @@ vector<string> llenarVectorPalabras(string codigo, vector<string> vectorPalabras
         }
 
         //Si el siguiente no es delimitador, lo guarda en la variable palabra.
-        // Para 
+        // Para guardar palabras x
         else if(!isdelimitador(codigo[i])){
             palabra += codigo[i];
             if(isdelimitador(codigo[i + 1])){
@@ -115,7 +104,7 @@ vector<string> llenarVectorPalabras(string codigo, vector<string> vectorPalabras
 }
 
 void resaltadorSec(string *rutas, int size){
-    for(int i = 1; i < size; i++){
+    for(int i = 1; i < size; i++){ // todo el codigo de secuencial tiene que ir dentro de este loop. Para poder hacer el resaltador para cada archivo.
         cout<<i<<": "<<rutas[i]<<endl;
     }
 
