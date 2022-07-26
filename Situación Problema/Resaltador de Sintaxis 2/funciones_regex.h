@@ -54,7 +54,7 @@ bool isInclude(string palabra){
 }
 
 bool isFromLanguage(string palabra){
-    regex reg("asm|double|new|switch|auto|else|operator|template|break|enum|private|this|case|extern|protected|throw|catch|float|public|trychar|for|register|typedef|class|friend|return|union|const|goto|short|unsigned|continue|if|signed|virtual|default|inline|sizeof|void|delete|int|static|volatile|do|long|struct|while|cout|cin|true|false|char|void|bool|null|printf|scanf|delete|endl");
+    regex reg("string|using|namespace|asm|double|new|switch|auto|else|operator|template|break|enum|private|this|case|extern|protected|throw|catch|float|public|trychar|for|register|typedef|class|friend|return|union|const|goto|short|unsigned|continue|if|signed|virtual|default|inline|sizeof|void|delete|int|static|volatile|do|long|struct|while|cout|cin|true|false|char|void|bool|null|printf|scanf|delete|endl");
     if (regex_match(palabra, reg)){
 		return true;
 	}
@@ -78,7 +78,7 @@ bool isOperador(string palabra){
 }
 
 bool isCadena(string palabra){
-    regex reg("[\"][ a-zA-Z0-9_;,.]*[\"]");
+    regex reg("[\"][ a-zA-Z0-9_;,.!]*[\"]");
     if (regex_match(palabra, reg)){
 		return true;
 	}
@@ -96,6 +96,20 @@ bool isNumero(string palabra){
 bool isVariable(string palabra){
     regex reg("[a-zA-Z_]+[a-zA-Z_0-9]*");
     if (regex_match(palabra, reg)){
+		return true;
+	}
+	return false;
+}
+
+bool isEncierra(string palabra){
+    if(palabra == "(" || palabra == ")" || palabra == "[" || palabra == "]" || palabra == "{" || palabra == "}"){
+        return true;
+    }
+}
+
+bool isPuntuacion(string palabra){
+    regex reg(";|,|:");
+	if (regex_match(palabra, reg)) {
 		return true;
 	}
 	return false;
