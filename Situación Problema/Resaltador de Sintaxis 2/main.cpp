@@ -126,7 +126,7 @@ void resaltadorSec(string *rutas, int size){
             // }
 
             //Esto imprime ResaltadorSecuencial_#1.html
-            string outFile_name = "ResaltadorSecuencial_#" + rutas[i].substr(rutas[1].length() - 5, 1) + ".html";
+            string outFile_name = "Resaltador_Secuencial_#" + rutas[i].substr(rutas[1].length() - 5, 1) + ".html";
             // cout<<"\n Nombre del archivo: "<<outFile_name<<endl;
 
             ofstream htmlOutput(outFile_name);
@@ -324,12 +324,6 @@ int main(int argc, char** argv){
     cout << "SPEED UP = " << setprecision(5) << (sequential / concurrent) << " ms\n" << endl;
 
     delete [] rutasArchivos;
-
-    // cout << "You have entered " << argc
-    //      << " arguments:" << "\n";
-  
-    // for (int i = 0; i < argc; ++i)
-    //     cout << "FILE #" << i << ": " << argv[i] << "\n";
   
     return 0;
 }
