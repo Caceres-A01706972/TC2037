@@ -1,6 +1,7 @@
 # 5.3 RESALTADOR DE SINTAXIS CONCURRENTE
 
 - *Se debe de tener instalado pthreads en Windows* 'https://youtu.be/U7cGjV37rbk'
+- Debe de tener todos los archivos en este repositorio para poder ejecutar.
 
 ### Para ejecutar en Windows:
 
