@@ -54,7 +54,7 @@ bool isInclude(string palabra){
 }
 
 bool isFromLanguage(string palabra){
-    regex reg("string|using|namespace|asm|double|new|switch|auto|else|operator|template|break|enum|private|this|case|extern|protected|throw|catch|float|public|trychar|for|register|typedef|class|friend|return|union|const|goto|short|unsigned|continue|if|signed|virtual|default|inline|sizeof|void|delete|int|static|volatile|do|long|struct|while|cout|cin|true|false|char|void|bool|null|printf|scanf|delete|endl");
+    regex reg("push_back|string|using|namespace|asm|double|new|switch|auto|else|operator|template|break|enum|private|this|case|extern|protected|throw|catch|float|public|trychar|for|register|typedef|class|friend|return|union|const|goto|short|unsigned|continue|if|signed|virtual|default|inline|sizeof|void|delete|int|static|volatile|do|long|struct|while|cout|cin|true|false|char|void|bool|null|printf|scanf|delete|endl");
     if (regex_match(palabra, reg)){
 		return true;
 	}

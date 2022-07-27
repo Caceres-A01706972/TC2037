@@ -6,42 +6,39 @@ body {
     background-color: #242526;
 }
 
-/* Variable / Identificador */
+.include {
+    color: rgb(156, 48, 186);
+}
+
+.reserved {
+    color: rgb(165, 0, 104);
+}
+
 .variable {
     color: dodgerblue;
 }
 
-/* Número enteros y reales */
-.number {
-    color: blueviolet;
+
+.numero {
+    color: rgb(85, 255, 131);
 }
 
-/* Operador */
-.operator {
+.operador {
     color: white;
 }
 
-/* Comentario */
 .comment {
-    color: gray;
+    color: rgb(209, 209, 209);
 }
 
-/* Palabra reservada */
-.reserved {
-    color: orange;
-}
-
-/* String */
 .string {
-    color: green;
+    color: rgb(192, 108, 12);
 }
 
-/* Puntuación */
-.punctuation {
-    color: red;
+.puntuacion {
+    color: rgb(255, 255, 255);
 }
 
-/* Includes */
-.includes {
-    color: lightseagreen;
+.encierra {
+    color: rgb(231, 65, 170);
 }

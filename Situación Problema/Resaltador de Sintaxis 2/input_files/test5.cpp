@@ -8,4 +8,11 @@ int main() {
     string word = "test5";
     int num = 5;
 
+    const int arraySize = 5;
+
+    string *array;
+    array = new string[arraySize];
+
+    return 0;
+
 }

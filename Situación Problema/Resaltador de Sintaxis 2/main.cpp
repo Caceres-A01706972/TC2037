@@ -8,7 +8,7 @@
 // All Rights Reserved. May be reproduced for any non-commercial
 // purpose.
 //
-// Github:
+// Github: https://github.com/Caceres-A01706972/TC2037/tree/main/Situación%20Problema/Resaltador%20de%20Sintaxis%202 
 // =================================================================
 
 #include <iostream>
@@ -120,14 +120,9 @@ void resaltadorSec(string *rutas, int size){
             }
             
             vectorPalabras = llenarVectorPalabras(codigo, vectorPalabras); 
-            
-            // for(int i = 0; i < vectorPalabras.size(); i++){
-            //     cout<<vectorPalabras[i]<<endl;
-            // }
 
             //Esto imprime ResaltadorSecuencial_#1.html
             string outFile_name = "Resaltador_Secuencial_#" + rutas[i].substr(rutas[1].length() - 5, 1) + ".html";
-            // cout<<"\n Nombre del archivo: "<<outFile_name<<endl;
 
             ofstream htmlOutput(outFile_name);
 
