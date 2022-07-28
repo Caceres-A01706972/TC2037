@@ -122,7 +122,7 @@ void resaltadorSec(string *rutas, int size){
             vectorPalabras = llenarVectorPalabras(codigo, vectorPalabras); 
 
             //Esto imprime ResaltadorSecuencial_#1.html
-            string outFile_name = "Resaltador_Secuencial_#" + rutas[i].substr(rutas[1].length() - 5, 1) + ".html";
+            string outFile_name = "Resaltador_Secuencial_#" + to_string(i) + ".html";
 
             ofstream htmlOutput(outFile_name);
 
@@ -132,7 +132,7 @@ void resaltadorSec(string *rutas, int size){
             htmlOutput << "<meta charset = 'UTF-8'> \n\t";
             htmlOutput << "<meta http - equiv = 'X-UA-Compatible' content = 'IE=edge'>\n\t";
             htmlOutput << "<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>\n\t";
-            htmlOutput << "<title> Secuencial "<<rutas[i].substr(rutas[1].length() - 5, 1)<<"</title> <link rel = 'stylesheet' href = 'styles.css'>";
+            htmlOutput << "<title> Secuencial "<<to_string(i)<<"</title> <link rel = 'stylesheet' href = 'styles.css'>";
             htmlOutput << "</head>\n<body>\n";
 
             for(int posPalabra = 0; posPalabra < vectorPalabras.size(); posPalabra++){
@@ -209,7 +209,7 @@ void* resaltadorConcurrente(void* params){
             vectorPalabras = llenarVectorPalabras(codigo, vectorPalabras); 
 
             //Esto imprime ResaltadorSecuencial_#1.html
-            string outFile_name = "Resaltador_Concurrente_#" + block->arreglo[i].substr(block->arreglo[1].length() - 5, 1) + ".html";
+            string outFile_name = "Resaltador_Concurrente_#" + to_string(i) + ".html";
 
             ofstream htmlOutput(outFile_name);
 
@@ -219,7 +219,7 @@ void* resaltadorConcurrente(void* params){
             htmlOutput << "<meta charset = 'UTF-8'> \n\t";
             htmlOutput << "<meta http - equiv = 'X-UA-Compatible' content = 'IE=edge'>\n\t";
             htmlOutput << "<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>\n\t";
-            htmlOutput << "<title> Secuencial "<<block->arreglo[i].substr(block->arreglo[1].length() - 5, 1)<<"</title> <link rel = 'stylesheet' href = 'styles.css'>";
+            htmlOutput << "<title> Secuencial "<<to_string(i)<<"</title> <link rel = 'stylesheet' href = 'styles.css'>";
             htmlOutput << "</head>\n<body>\n";
 
             for(int posPalabra = 0; posPalabra < vectorPalabras.size(); posPalabra++){
